@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TapSwift - Premium NFC Business Cards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+        header { background: #000; color: #fff; text-align: center; padding: 60px 20px; }
+        h1 { font-size: 3em; margin: 0; }
+        .tagline { font-size: 1.5em; margin-top: 10px; }
+        section { padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
+        .how-it-works { display: flex; flex-wrap: wrap; justify-content: space-around; }
+        .step { width: 30%; text-align: center; margin: 20px 0; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .feature { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .pricing { display: flex; flex-wrap: wrap; justify-content: space-around; }
+        .price-card { background: #fff; width: 300px; padding: 20px; margin: 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); text-align: center; }
+        .price-card h3 { color: #ffd700; }
+        .cta { text-align: center; background: #ffd700; color: #000; padding: 40px; }
+        button { background: #000; color: #fff; border: none; padding: 15px 30px; font-size: 1.2em; cursor: pointer; border-radius: 5px; }
+        footer { text-align: center; padding: 20px; background: #000; color: #fff; }
+        @media (max-width: 768px) { .step, .price-card { width: 100%; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TapSwift</h1>
+        <p class="tagline">Paper Business Cards Are Dead in 2026. Upgrade to TapSwift.</p>
+        <p>In UAE's fast-paced world, handing out paper cards is outdated. They get lost, forgotten, or tossed. You look average—not innovative.</p>
+    </header>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="how-it-works">
+            <div class="step">
+                <h3>Choose Your Premium Card</h3>
+                <p>Luxurious black, silver, gold metal, or eco-bamboo. Custom laser-engraved with your name, logo, and design.</p>
+            </div>
+            <div class="step">
+                <h3>We Program & Setup</h3>
+                <p>Load your contact info, LinkedIn, website, socials onto the NFC chip. Build your dashboard.</p>
+            </div>
+            <div class="step">
+                <h3>Tap To Share</h3>
+                <p>Tap the card to any phone (Apple/Android). Profile appears instantly—no app needed. Update anytime via dashboard.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature">Lifetime Validity</div>
+            <div class="feature">Easy To Edit Profile</div>
+            <div class="feature">Water Resistant</div>
+            <div class="feature">Works With Apple and Android</div>
+            <div class="feature">Works on Devices without NFC</div>
+            <div class="feature">Dynamic QR Code</div>
+            <div class="feature">Add PDFs/Document Links</div>
+            <div class="feature">Virtual Profile</div>
+            <div class="feature">Create Multiple Profiles</div>
+            <div class="feature">Multiple Social Media Profiles</div>
+            <div class="feature">Personalised URL</div>
+            <div class="feature">Collect Reviews</div>
+            <div class="feature">Receive Contacts</div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Rates</h2>
+        <div class="pricing">
+            <div class="price-card">
+                <h3>PVC Card</h3>
+                <p>99 AED</p>
+                <p>Durable plastic, full-color printing. Entry-level option.</p>
+            </div>
+            <div class="price-card">
+                <h3>Wood Card</h3>
+                <p>149 AED</p>
+                <p>Eco-friendly, natural finish for sustainable pros.</p>
+            </div>
+            <div class="price-card">
+                <h3>Black/Silver Metal</h3>
+                <p>249 AED</p>
+                <p>Sleek, durable, prestige feel for Dubai networking.</p>
+            </div>
+            <div class="price-card">
+                <h3>Gold/Rose Gold Metal</h3>
+                <p>249 AED</p>
+                <p>Luxury engraving, eye-catching for executives.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Be Swift, Make The Switch</h2>
+        <p>Tap Into Us Today.</p>
+        <button onclick="alert('Inquiry form coming soon! Email us at info@tapswift.com')">Get Started</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TapSwift. Dubai, UAE. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple smooth scroll for future nav if added
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
