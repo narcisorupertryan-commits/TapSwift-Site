@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TapSwift UAE | The Future of Networking</title>
+    
+    <meta name="description" content="UAE's #1 NFC Digital Business Card. Share your contact details, social media, and more with a single tap. No app required.">
+    <meta name="keywords" content="NFC Card UAE, Digital Business Card Dubai, TapSwift, Smart Card">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: white; }
+        .gold-text {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border { border-image: linear-gradient(to right, #bf953f, #fcf6ba) 1; }
+        .gold-bg { background: linear-gradient(135deg, #bf953f 0%, #aa771c 100%); }
+        
+        /* 3D Card Floating Animation */
+        .float-card { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(2deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        /* Glassmorphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-yellow-600 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tighter flex items-center gap-2">
+                <i class="fa-solid fa-wifi rotate-90 text-yellow-500"></i>
+                TAP<span class="text-yellow-500">SWIFT</span>.AE
+            </a>
+
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-300">
+                <a href="#how-it-works" class="hover:text-yellow-500 transition">How It Works</a>
+                <a href="#products" class="hover:text-yellow-500 transition">Shop Cards</a>
+                <a href="#features" class="hover:text-yellow-500 transition">Features</a>
+                <a href="#corporate" class="hover:text-yellow-500 transition">Corporate</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="#products" class="hidden md:block bg-white text-black px-6 py-2.5 rounded-full font-bold text-sm hover:bg-yellow-500 hover:text-white transition duration-300">
+                    Buy Now
+                </a>
+                <button class="md:hidden text-2xl"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-yellow-600/20 rounded-full blur-[120px] -z-10"></div>
+
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left space-y-6">
+                <div class="inline-block px-4 py-1 border border-yellow-500/30 rounded-full bg-yellow-900/10 text-yellow-500 text-xs font-bold tracking-widest uppercase mb-2">
+                    #1 Digital Card in UAE
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    The Last Business Card <br> 
+                    <span class="gold-text">You'll Ever Need.</span>
+                </h1>
+                <p class="text-gray-400 text-lg md:text-xl max-w-lg mx-auto md:mx-0">
+                    Instantly share your contact info, social media, and websites with a single tap. No app needed for you or the receiver.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                    <a href="#products" class="gold-bg text-black px-8 py-4 rounded-full font-bold shadow-lg shadow-yellow-600/20 hover:scale-105 transition transform">
+                        Shop Cards <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#how-it-works" class="glass text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">
+                        Watch Video
+                    </a>
+                </div>
+                
+                <div class="pt-6 flex items-center justify-center md:justify-start gap-4 text-sm text-gray-500">
+                    <span><i class="fa-brands fa-apple text-xl align-middle mr-1"></i> iOS Compatible</span>
+                    <span class="w-1 h-1 bg-gray-600 rounded-full"></span>
+                    <span><i class="fa-brands fa-android text-xl align-middle mr-1"></i> Android Ready</span>
+                </div>
+            </div>
+
+            <div class="relative h-[500px] flex items-center justify-center perspective-1000">
+                <div class="float-card w-80 h-[500px] bg-neutral-900 rounded-2xl border border-gray-700 shadow-2xl relative overflow-hidden flex flex-col items-center justify-center">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-black via-transparent to-white/10"></div>
+                    <div class="absolute top-12 left-8 w-12 h-10 border border-yellow-500/50 rounded-md flex items-center justify-center bg-yellow-500/10">
+                        <i class="fa-solid fa-microchip text-yellow-500 text-xl"></i>
+                    </div>
+                    <div class="text-center z-10">
+                        <i class="fa-solid fa-wifi rotate-90 text-yellow-500 text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold tracking-[0.2em] text-white">TAPSWIFT</h3>
+                        <p class="text-[10px] text-gray-400 mt-2 uppercase tracking-widest">Premium NFC</p>
+                    </div>
+                    <div class="absolute bottom-12 right-8 w-16 h-16 bg-white p-1 rounded">
+                         <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=TapSwift" alt="QR" class="w-full h-full opacity-90">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="border-y border-gray-800 bg-black py-8">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center opacity-30 grayscale overflow-hidden">
+            <span class="text-xl font-bold">EMAAR</span>
+            <span class="text-xl font-bold">DAMAC</span>
+            <span class="text-xl font-bold">TECOM GROUP</span>
+            <span class="text-xl font-bold">DUBAI HOLDING</span>
+            <span class="text-xl font-bold">ETISALAT</span>
+        </div>
+    </div>
+
+    <section id="how-it-works" class="py-24 bg-neutral-900">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-16">Go Digital in <span class="gold-text">3 Steps</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="space-y-6">
+                    <div class="w-20 h-20 mx-auto bg-gray-800 rounded-2xl flex items-center justify-center text-3xl text-yellow-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">1. Order Your Card</h3>
+                    <p class="text-gray-400 leading-relaxed">Select from our premium Matte Black, Gold, or Bamboo options. We ship anywhere in the UAE within 24 hours.</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="w-20 h-20 mx-auto bg-gray-800 rounded-2xl flex items-center justify-center text-3xl text-yellow-500">
+                        <i class="fa-solid fa-user-pen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">2. Create Profile</h3>
+                    <p class="text-gray-400 leading-relaxed">Scan the QR code on your card to register. Add your photo, bio, WhatsApp, Instagram, and LinkedIn links.</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="w-20 h-20 mx-auto bg-gray-800 rounded-2xl flex items-center justify-center text-3xl text-yellow-500">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">3. Tap & Share</h3>
+                    <p class="text-gray-400 leading-relaxed">Tap your card to the back of any smartphone. Your profile loads instantly. <br><strong class="text-white">No app required.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4 text-center">Choose Your Finish</h2>
+            <p class="text-gray-400 text-center mb-16">One-time payment. No monthly fees. Lifetime usage.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="glass rounded-3xl p-6 hover:border-yellow-500/50 transition duration-300 group">
+                    <div class="h-64 bg-neutral-800 rounded-xl mb-6 relative overflow-hidden flex items-center justify-center">
+                        <div class="w-40 h-60 bg-black rounded-lg shadow-2xl border border-gray-700 flex flex-col items-center justify-center group-hover:scale-105 transition">
+                            <i class="fa-solid fa-wifi text-gray-600 rotate-90 mb-2"></i>
+                            <span class="text-xs tracking-widest text-gray-400">TAPSWIFT</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">Matte Black PVC</h3>
+                            <p class="text-sm text-gray-400 mt-1">The classic choice.</p>
+                        </div>
+                        <span class="text-xl font-bold text-yellow-500">AED 99</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Durable PVC Material</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Water Resistant</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> NFC + QR Code</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-xl border border-white/20 hover:bg-white hover:text-black font-bold transition">Add to Cart</button>
+                </div>
+
+                <div class="glass rounded-3xl p-6 border border-yellow-500/30 relative">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 bg-yellow-500 text-black text-xs font-bold px-4 py-1 rounded-b-lg uppercase tracking-wider">
+                        Best Seller
+                    </div>
+                    <div class="h-64 bg-gradient-to-b from-gray-800 to-black rounded-xl mb-6 relative overflow-hidden flex items-center justify-center">
+                        <div class="w-40 h-60 bg-gradient-to-br from-neutral-800 to-black rounded-lg shadow-2xl border border-yellow-500/50 flex flex-col items-center justify-center">
+                            <i class="fa-solid fa-wifi text-yellow-500 rotate-90 mb-2"></i>
+                            <span class="text-xs tracking-widest text-yellow-500">METAL</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold gold-text">Executive Metal</h3>
+                            <p class="text-sm text-gray-400 mt-1">Stainless Steel Hybrid.</p>
+                        </div>
+                        <span class="text-xl font-bold text-yellow-500">AED 199</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i> Laser Engraved Name</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i> Heavyweight Premium Feel</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i> Lifetime Warranty</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-xl gold-bg text-black font-bold transition hover:shadow-lg hover:shadow-yellow-500/20">Add to Cart</button>
+                </div>
+
+                <div class="glass rounded-3xl p-6 hover:border-yellow-500/50 transition duration-300 group">
+                    <div class="h-64 bg-neutral-800 rounded-xl mb-6 relative overflow-hidden flex items-center justify-center">
+                         <div class="w-40 h-60 bg-white rounded-lg shadow-2xl flex flex-col items-center justify-center group-hover:scale-105 transition">
+                            <span class="text-black font-bold text-lg">YOUR LOGO</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">Custom Brand</h3>
+                            <p class="text-sm text-gray-400 mt-1">For Teams & Corporate.</p>
+                        </div>
+                        <span class="text-xl font-bold text-yellow-500">AED 149</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Full Color Printing</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Corporate Dashboard</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Bulk Discounts Available</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-xl border border-white/20 hover:bg-white hover:text-black font-bold transition">Customize</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 bg-neutral-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-6">More Than Just a Card. <br> <span class="gold-text">A Powerful Platform.</span></h2>
+                <p class="text-gray-400 mb-8">TapSwift provides a complete dashboard to manage your connections and analytics.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-500/10 flex items-center justify-center text-yellow-500 flex-shrink-0">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Real-Time Updates</h4>
+                            <p class="text-sm text-gray-400">Changed your phone number? Update it instantly on the dashboard. No need to reprint cards.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-500/10 flex items-center justify-center text-yellow-500 flex-shrink-0">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Analytics & Insights</h4>
+                            <p class="text-sm text-gray-400">See how many people tapped your card and which links they clicked.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-500/10 flex items-center justify-center text-yellow-500 flex-shrink-0">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Eco-Friendly</h4>
+                            <p class="text-sm text-gray-400">Save thousands of paper cards and reduce your carbon footprint.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-gray-800 rounded-xl p-2 shadow-2xl border border-gray-700 rotate-2 hover:rotate-0 transition duration-500">
+                    <div class="bg-black rounded-lg overflow-hidden">
+                        <div class="p-4 border-b border-gray-800 flex justify-between items-center">
+                            <div class="flex gap-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="text-xs text-gray-500">dashboard.tapswift.ae</div>
+                        </div>
+                        <div class="p-8 space-y-4">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 rounded-full bg-gray-700"></div>
+                                <div>
+                                    <div class="h-4 w-32 bg-gray-700 rounded mb-2"></div>
+                                    <div class="h-3 w-24 bg-gray-800 rounded"></div>
+                                </div>
+                            </div>
+                            <div class="h-10 w-full bg-yellow-600 rounded"></div>
+                            <div class="h-10 w-full bg-gray-800 rounded"></div>
+                            <div class="h-10 w-full bg-gray-800 rounded"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black border-t border-gray-800 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="text-2xl font-bold tracking-tighter flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-wifi rotate-90 text-yellow-500"></i>
+                        TAP<span class="text-yellow-500">SWIFT</span>.AE
+                    </a>
+                    <p class="text-gray-500 max-w-sm">
+                        The smartest business card in the Middle East. Designed in Dubai, shipped worldwide. Join the contactless revolution today.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Products</h4>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-yellow-500">Matte Black Card</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Bamboo Wood Card</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">24K Gold Plated</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Corporate Orders</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Support</h4>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-yellow-500">Help Center</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Compatible Devices</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+                <p>&copy; 2025 TapSwift UAE. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0 text-lg">
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
